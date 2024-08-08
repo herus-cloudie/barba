@@ -80,7 +80,7 @@ const Login = ({ navigation }) => {
           </View>
           <Text style={[styles.title, { 
             color: dark ? COLORS.white : COLORS.black
-          }]}>Login to Your Account</Text>
+          }]}>وارد اکانت خود شوید</Text>
             <Input
               id="email"
               onInputChanged={inputChangedHandler}

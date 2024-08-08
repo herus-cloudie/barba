@@ -10,7 +10,7 @@ export const FONTS = {
     italic: require("../assets/fonts/Urbanist-Italic.ttf"),
     light: require("../assets/fonts/Urbanist-Light.ttf"),
     lightItalic: require("../assets/fonts/Urbanist-LightItalic.ttf"),
-    medium: require("../assets/fonts/Urbanist-Medium.ttf"),
+    medium: require("../assets/fonts/PEYDAFANUM-BOLD.TTF"),
     mediumItalic: require("../assets/fonts/Urbanist-MediumItalic.ttf"),
     regular: require("../assets/fonts/Urbanist-Regular.ttf"),
     semiBold: require("../assets/fonts/Urbanist-SemiBold.ttf"),
