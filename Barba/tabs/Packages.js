@@ -18,7 +18,7 @@ const Packages = () => {
        <SubHeaderItem
           title="Packages"
           onPress={()=>navigation.navigate("SalonDetailsOurPackages")}
-          navTitle="See All"
+          navTitle="دیدن همه"
        />
        <View style={[styles.separateLine, { 
         backgroundColor: dark ? COLORS.grayscale700 : COLORS.grayscale200,

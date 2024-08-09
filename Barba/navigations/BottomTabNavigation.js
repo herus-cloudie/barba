@@ -27,7 +27,7 @@ const BottomTabNavigation = () => {
             },
         }}>
             <Tab.Screen
-                name="Home"
+                name="خانه"
                 component={Home}
                 options={{
                     tabBarIcon: ({ focused }) => {
@@ -45,7 +45,7 @@ const BottomTabNavigation = () => {
                                     <Text style={{
                                         ...FONTS.body4,
                                         color: focused? COLORS.primary : dark ? COLORS.gray3 : COLORS.gray3,
-                                    }}>Home</Text>
+                                    }}>خانه</Text>
                             </View>
                         )
                     },
@@ -70,7 +70,7 @@ const BottomTabNavigation = () => {
                                     <Text style={{
                                         ...FONTS.body4,
                                         color: focused? COLORS.primary : dark ? COLORS.gray3 : COLORS.gray3,
-                                    }}>Explore</Text>
+                                    }}>نقشه</Text>
                             </View>
                         )
                     },
@@ -96,7 +96,7 @@ const BottomTabNavigation = () => {
                                     <Text style={{
                                         ...FONTS.body4,
                                         color: focused? COLORS.primary : dark ? COLORS.gray3 : COLORS.gray3,
-                                    }}>My Booking</Text>
+                                    }}>رزروهای من</Text>
                             </View>
                         )
                     },
@@ -122,7 +122,7 @@ const BottomTabNavigation = () => {
                                     <Text style={{
                                         ...FONTS.body4,
                                         color: focused? COLORS.primary : dark ? COLORS.gray3 : COLORS.gray3,
-                                    }}>Inbox</Text>
+                                    }}>پیام ها</Text>
                             </View>
                         )
                     },
@@ -147,7 +147,7 @@ const BottomTabNavigation = () => {
                                     <Text style={{
                                         ...FONTS.body4,
                                         color: focused? COLORS.primary : dark ? COLORS.gray3 : COLORS.gray3,
-                                    }}>Profile</Text>
+                                    }}>پروفایل</Text>
                             </View>
                         )
                     },

@@ -17,7 +17,7 @@ const Services = () => {
     }]}>
        <SubHeaderItem
          title="Our Services"
-         navTitle="See All"
+         navTitle="دیدن همه"
          onPress={()=>navigation.navigate("OurServices")}
        />
        <View style={[styles.separateLine, { 

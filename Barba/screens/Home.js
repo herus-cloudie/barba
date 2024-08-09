@@ -57,10 +57,10 @@ const Home = ({ navigation }) => {
               style={styles.userIcon}
             />
             <View style={styles.viewNameContainer}>
-               <Text style={styles.greeeting}>Good Morning👋</Text>
+               <Text style={styles.greeeting}>وقت بخیر👋</Text>
                <Text style={[styles.title, { 
                 color: dark ? COLORS.white : COLORS.greyscale900
-               }]}>Andrew Ainsley</Text>
+               }]}>ستاره قاسمی</Text>
             </View>
           </View>
           <View style={styles.viewRight}>
@@ -108,7 +108,7 @@ const Home = ({ navigation }) => {
           />
         </TouchableOpacity>
         <TextInput
-          placeholder='Search'
+          placeholder='جستجو'
           placeholderTextColor={COLORS.gray}
           style={styles.searchInput}
           onFocus={handleInputFocus}
@@ -160,8 +160,8 @@ const Home = ({ navigation }) => {
     return (
       <View>
         <SubHeaderItem
-          title="Categories"
-          navTitle="See All"
+          title="دسته بندی"
+          navTitle="دیدن همه"
           onPress={() => console.log("See all services")}
         />
 
@@ -229,8 +229,8 @@ const Home = ({ navigation }) => {
     return (
       <View>
           <SubHeaderItem
-          title="Nearby Your Location"
-          navTitle="See All"
+          title="نزدیک به شما"
+          navTitle="دیدن همه"
           onPress={() => navigation.navigate("SalonsNearbyYourLocation")}
         />
 
@@ -309,8 +309,8 @@ const Home = ({ navigation }) => {
     return (
       <View>
          <SubHeaderItem
-          title="Most Popular"
-          navTitle="See All"
+          title=" محبوب ترین ها"
+          navTitle="دیدن همه"
           onPress={() => navigation.navigate("MostPopularSalons")}
         />
 
@@ -390,7 +390,7 @@ const styles = StyleSheet.create({
     fontSize: 12,
     fontFamily: "regular",
     color: "gray",
-    marginBottom: 4
+    marginBottom: 4,
   },
   title: {
     fontSize: 20,
@@ -503,14 +503,14 @@ const styles = StyleSheet.create({
     width: "100%",
     paddingBottom: 10,
     backgroundColor: COLORS.primary,
-    height: 170,
+    height: 190,
     borderRadius: 32,
   },
   dotContainer: {
     flexDirection: 'row',
     justifyContent: 'center',
     alignItems: 'center',
-    marginTop: 10,
+    // gap : '50px'
   },
   dot: {
     width: 10,

@@ -54,25 +54,25 @@ const Onboarding3 = ({ navigation }) => {
             backgroundColor: colors.background
           }]}>
             <View style={Onboarding1Styles.titleContainer}>
-              <Text style={[Onboarding1Styles.title, { color: colors.text }]}>Organized</Text>
-              <Text style={Onboarding1Styles.subTitle}>A Premium Barber Experience.</Text>
+              <Text style={[Onboarding1Styles.title, { color: colors.text }]}>اپلیکیشن جامع نیکارا</Text>
+              <Text style={Onboarding1Styles.subTitle}>ضامن دریافت خدمات ویژه برای شما</Text>
             </View>
 
             <Text style={[Onboarding1Styles.description, { color: colors.text }]}>
-            Explore a wide range of skilled barbers and salons, ensuring your grooming experience is both effortless and delightful.
+           انتخاب از بین بهترین آرایشگاه ها و آرایشگرهای کل کشور
             </Text>
 
             <View style={Onboarding1Styles.dotsContainer}>
               {progress < 1 && <DotsView progress={progress} numDots={4} />}
             </View>
             <Button
-              title="Next"
+              title="بعدی"
               filled
               onPress={() => navigation.navigate('Onboarding4')}
               style={Onboarding1Styles.nextButton}
             />
             <Button
-              title="Skip"
+              title="رد کردن"
               onPress={() => navigation.navigate('Login')}
               textColor={COLORS.primary}
               style={Onboarding1Styles.skipButton}

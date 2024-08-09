@@ -22,7 +22,7 @@ const MyBooking = () => {
             />
             <Text style={[styles.headerTitle, {
               color: dark ? COLORS.white : COLORS.greyscale900
-            }]}>My Bookings</Text>
+            }]}>رزروهای من</Text>
          </View>
          <View style={styles.headerRightContainer}>
             <TouchableOpacity>

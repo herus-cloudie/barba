@@ -37,14 +37,14 @@ const ReviewSummary = ({ navigation }) => {
                             style={styles.editPencilIcon}
                             />
                         </View>
-                          <Text style={styles.modalTitle}>Congratulations!</Text>
+                          <Text style={styles.modalTitle}>تبریک!</Text>
                           <Text style={[styles.modalSubtitle, { 
                              color: dark ? COLORS.white : COLORS.black,
                           }]}>
                           You have successfully made a payment and booked a service.
                           </Text>
                           <Button
-                              title="Continue"
+                              title="ادامه"
                               filled
                               onPress={() => {
                                   setModalVisible(false)
@@ -165,7 +165,7 @@ const ReviewSummary = ({ navigation }) => {
 
         </ScrollView>
         <Button
-          title="Continue"
+          title="ادامه"
           onPress={() => setModalVisible(true)}
           filled
           style={styles.continueBtn}

@@ -18,8 +18,7 @@ const CreateNewPIN = ({ navigation }) => {
                 <ScrollView contentContainerStyle={styles.center}>
                     <Text style={[styles.title, {
                         color: dark ? COLORS.white : COLORS.greyscale900
-                    }]}>Add a PIN number to make your account
-                        more secure.</Text>
+                    }]}>برای امنیت بیشتر حساب کاربریتان پین کد وارد کنید.</Text>
                     <OtpInput
                         numberOfDigits={4}
                         onTextChange={(text) => console.log(text)}
@@ -40,7 +39,7 @@ const CreateNewPIN = ({ navigation }) => {
                             }
                         }}/>
                      <Button
-                    title="Continue"
+                    title="ادامه"
                     filled
                     style={styles.button}
                     onPress={() => { navigation.navigate("Fingerprint") }}

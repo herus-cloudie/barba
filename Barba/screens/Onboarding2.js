@@ -52,25 +52,25 @@ const Onboarding2 = ({ navigation }) => {
           />
           <View style={Onboarding1Styles.buttonContainer}>
             <View style={Onboarding1Styles.titleContainer}>
-              <Text style={[Onboarding1Styles.title, { color: colors.text }]}>Enjoy your grooming journey with </Text>
-              <Text style={Onboarding1Styles.subTitle}>BARBA</Text>
+              <Text style={[Onboarding1Styles.title, { color: colors.text }]}>سهولت و کاربری آسان در </Text>
+              <Text style={Onboarding1Styles.subTitle}>نیکارا</Text>
             </View>
 
             <Text style={[Onboarding1Styles.description, { color: colors.text }]}>
-            Book anytime and anywhere easily and conveniently. Use it wherever you are.
+            در هرکجا و هرزمانی، با چند کلیک ساده خدمات خود را دریافت کنید.
             </Text>
 
             <View style={Onboarding1Styles.dotsContainer}>
               {progress < 1 && <DotsView progress={progress} numDots={4} />}
             </View>
             <Button
-              title="Next"
+              title="بعدی"
               filled
               onPress={() => navigation.navigate('Onboarding2')}
               style={Onboarding1Styles.nextButton}
             />
             <Button
-              title="Skip"
+              title="رد کردن"
               onPress={() => navigation.navigate('Login')}
               textColor={COLORS.primary}
               style={Onboarding1Styles.skipButton}

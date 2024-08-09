@@ -389,23 +389,21 @@ export const banners = [
     {
       id: 1,
       discount: '40%',
-      discountName: "Today's Special",
-      bottomTitle: 'Get a discount for every service order!',
-      bottomSubtitle: 'Only valid for today!',
+      discountName: "ویژه های امروز",
+      bottomTitle: 'هر روز کلی خدمات با تخفیف دریافت کن',
+    //   bottomSubtitle: '',
     },
     {
       id: 2,
       discount: '50%',
-      discountName: "Weekend Sale",
-      bottomTitle: 'Special discount for weekend orders!',
-      bottomSubtitle: 'This weekend only!',
+      discountName: "تخفیفات آخرهفته",
+      bottomTitle: 'آخر هفته ها همیشه تخفیف داریم!',
     },
     {
       id: 3,
       discount: '30%',
-      discountName: "Limited Time Offer",
-      bottomTitle: 'Hurry up! Limited time offer!',
-      bottomSubtitle: 'Valid until supplies last!',
+      discountName: "فروش ویژه موقت",
+      bottomTitle: 'زمان رو از دست نده، کلی ایتم خفن با تخفیف داریم',
     },
     // Add more banner objects here
 ];
@@ -414,14 +412,14 @@ export const notifications = [
     {
         id: "1",
         icon: icons.chat,
-        title: "Kathryn sent you a message",
-        description: "Tap to see the message",
+        title: "آرایشگاه ستاره",
+        description: "وقت شما برای ساعت 3 جمعه 21 تیر تنظیم شد",
         date: "2024-01-16T04:52:06.501Z"
     },
     {
         id: "2",
         icon: icons.box,
-        title: "Congratulations! You have booked a salon.",
+        title: "تبریک! You have booked a salon.",
         description: "Review the salon summary.",
         date: "2024-01-23T04:52:06.501Z"
     },
@@ -500,7 +498,7 @@ export const notifications = [
 export const categories = [
     {
       id: "1",
-      name: "Haircuts",
+      name: "آرایش مو",
       icon: icons.cut,
       iconColor: COLORS.primary,
       backgroundColor: COLORS.tansparentPrimary,
@@ -508,7 +506,7 @@ export const categories = [
     },
     {
       id: "2",
-      name: "Make up",
+      name: "میک آپ",
       icon: icons.brush,
       iconColor: COLORS.primary,
       backgroundColor: COLORS.tansparentPrimary,
@@ -516,7 +514,7 @@ export const categories = [
     },
     {
       id: "3",
-      name: "Manicure",
+      name: "مانیکور",
       icon: icons.manicure,
       iconColor: COLORS.primary,
       backgroundColor: COLORS.tansparentPrimary,
@@ -524,7 +522,7 @@ export const categories = [
     },
     {
       id: "4",
-      name: "Massage",
+      name: "ماساژ",
       icon: icons.massage,
       iconColor: COLORS.primary,
       backgroundColor: COLORS.tansparentPrimary,
@@ -535,23 +533,23 @@ export const categories = [
   export const category = [
     {
         id: "1",
-        name: "All"
+        name: "همه"
     },
     {
         id: "2",
-        name: "Haircuts"
+        name: "آرایش مو"
     },
     {
         id: "3",
-        name: "Make up",
+        name: "میک آپ",
     },
     {
         id: "4",
-        name: "Manicure",
+        name: "مانیکور",
     },
     {
         id: "5",
-        name: "Massage",
+        name: "ماساژ",
     }
 ];
 

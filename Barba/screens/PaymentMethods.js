@@ -70,7 +70,7 @@ const PaymentMethods = ({ navigation }) => {
         />
         </ScrollView>
         <Button
-          title="Continue"
+          title="ادامه"
           filled
           style={styles.continueBtn}
           onPress={() => { navigation.navigate("ReviewSummary")}}

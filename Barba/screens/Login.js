@@ -85,7 +85,7 @@ const Login = ({ navigation }) => {
               id="email"
               onInputChanged={inputChangedHandler}
               errorText={formState.inputValidities['email']}
-              placeholder="Email"
+              placeholder="ایمیل"
               placeholderTextColor={dark ? COLORS.grayTie : COLORS.black}
               icon={icons.email}
               keyboardType="email-address"
@@ -95,14 +95,14 @@ const Login = ({ navigation }) => {
               errorText={formState.inputValidities['password']}
               autoCapitalize="none"
               id="password"
-              placeholder="Password"
+              placeholder="پسورد"
               placeholderTextColor={dark ? COLORS.grayTie : COLORS.black}
               icon={icons.padlock}
-              secureTextEntry={true}
             />
             <View style={styles.checkBoxContainer}>
-              <View style={{ flexDirection: 'row' }}>
+              <View style={{ flexDirection: 'row'}}>
                 <Checkbox
+                
                   style={styles.checkbox}
                   value={isChecked}
                   color={isChecked ? COLORS.primary : dark ? COLORS.primary : "gray"}
@@ -111,23 +111,23 @@ const Login = ({ navigation }) => {
                 <View style={{ flex: 1 }}>
                   <Text style={[styles.privacy, {
                     color: dark ? COLORS.white : COLORS.black
-                  }]}>Remenber me</Text>
+                  }]}>مرا به خاطر بسپار</Text>
                 </View>
               </View>
             </View>
             <Button
-              title="Login"
+              title="ورود"
               filled
               onPress={() => navigation.navigate("Main")}
               style={styles.button}
             />
             <TouchableOpacity
              onPress={()=>navigation.navigate("ForgotPasswordMethods")}>
-              <Text style={styles.forgotPasswordBtnText}>Forgot the password?</Text>
+              <Text style={styles.forgotPasswordBtnText}>رمز خود را فراموش کرده اید؟</Text>
             </TouchableOpacity>
             <View>
              
-              <OrSeparator text="or continue with"/>
+              <OrSeparator text="ورود با"/>
               <View style={styles.socialBtnContainer}>
                 <SocialButton
                   icon={icons.appleLogo}
@@ -146,13 +146,14 @@ const Login = ({ navigation }) => {
             </View>
         </ScrollView>
         <View style={styles.bottomContainer}>
-            <Text style={[styles.bottomLeft, { 
-              color: dark? COLORS.white : COLORS.black
-            }]}>Don't have an account ?</Text>
             <TouchableOpacity
               onPress={() => navigation.navigate("Signup")}>
-              <Text style={styles.bottomRight}>{"  "}Sign Up</Text>
+              <Text style={styles.bottomRight}>{"  "}ثبت نام</Text>
             </TouchableOpacity>
+            <Text style={[styles.bottomLeft, { 
+              color: dark? COLORS.white : COLORS.black
+            }]}>حساب کاربری ندارید؟</Text>
+
           </View>
       </View>
     </SafeAreaView>
@@ -204,6 +205,7 @@ const styles = StyleSheet.create({
     marginVertical: 18,
   },
   checkbox: {
+    direction : 'ltr',
     marginRight: 8,
     height: 16,
     width: 16,

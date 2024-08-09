@@ -96,7 +96,7 @@ const Haircuts = ({ navigation }) => {
             />
           </TouchableOpacity>
           <TextInput
-            placeholder='Search'
+            placeholder='جستجو'
             placeholderTextColor={COLORS.gray}
             style={[styles.searchInput, { 
               color: dark? COLORS.white : COLORS.greyscale900

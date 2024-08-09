@@ -132,7 +132,7 @@ const SalonDetails = ({ navigation }) => {
          <View>
             <SubHeaderItem
               title="Our Specialists" 
-              navTitle="See All"
+              navTitle="دیدن همه"
               onPress={()=>navigation.navigate("OurSpecialists")}
             />
             <FlatList

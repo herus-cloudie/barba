@@ -177,7 +177,7 @@ const FillYourProfile = ({ navigation }) => {
   return (
     <SafeAreaView style={[styles.area, { backgroundColor: colors.background }]}>
       <View style={[styles.container, { backgroundColor: colors.background }]}>
-        <Header title="Fill Your Profile" />
+        <Header title="پروفایل خود را تکمیل کنید" />
         <ScrollView showsVerticalScrollIndicator={false}>
           <View style={{ alignItems: "center", marginVertical: 12 }}>
             <View style={styles.avatarContainer}>
@@ -200,35 +200,16 @@ const FillYourProfile = ({ navigation }) => {
               id="fullName"
               onInputChanged={inputChangedHandler}
               errorText={formState.inputValidities['fullName']}
-              placeholder="Full Name"
-              placeholderTextColor={COLORS.gray} />
-            <Input
-              id="nickname"
-              onInputChanged={inputChangedHandler}
-              errorText={formState.inputValidities['nickname']}
-              placeholder="Nickname"
+              placeholder="نام و نام خانوادگی"
               placeholderTextColor={COLORS.gray} />
             <Input
               id="email"
               onInputChanged={inputChangedHandler}
               errorText={formState.inputValidities['email']}
-              placeholder="Email"
+              placeholder="ایمیل"
               placeholderTextColor={COLORS.gray}
               keyboardType="email-address" />
-            <View style={{
-              width: SIZES.width - 32
-            }}>
-              <TouchableOpacity
-                style={[styles.inputBtn, {
-                  backgroundColor: dark ? COLORS.dark2 : COLORS.greyscale500,
-                  borderColor: dark ? COLORS.dark2 : COLORS.greyscale500,
-                }]}
-                onPress={handleOnPressStartDate}
-              >
-                <Text style={{ ...FONTS.body4, color: COLORS.grayscale400 }}>{startedDate}</Text>
-                <Feather name="calendar" size={24} color={COLORS.grayscale400} />
-              </TouchableOpacity>
-            </View>
+            
             <View style={[styles.inputContainer, {
               backgroundColor: dark ? COLORS.dark2 : COLORS.greyscale500,
               borderColor: dark ? COLORS.dark2 : COLORS.greyscale500,
@@ -257,7 +238,7 @@ const FillYourProfile = ({ navigation }) => {
               {/* Phone Number Text Input */}
               <TextInput
                 style={styles.input}
-                placeholder="Enter your phone number"
+                placeholder="شماره موبایل خود را وارد کنید"
                 placeholderTextColor={COLORS.gray}
                 selectionColor="#111"
                 keyboardType="numeric"
@@ -266,17 +247,11 @@ const FillYourProfile = ({ navigation }) => {
           </View>
         </ScrollView>
       </View>
-      <DatePickerModal
-        open={openStartDatePicker}
-        startDate={startDate}
-        selectedDate={startedDate}
-        onClose={() => setOpenStartDatePicker(false)}
-        onChangeStartDate={(date) => setStartedDate(date)}
-      />
+
       {RenderAreasCodesModal()}
       <View style={styles.bottomContainer}>
         <Button
-          title="Skip"
+          title="رد کردن"
           style={{
             width: (SIZES.width - 32) / 2 - 8,
             borderRadius: 32,
@@ -287,7 +262,7 @@ const FillYourProfile = ({ navigation }) => {
           onPress={() => navigation.navigate("CreateNewPIN")}
         />
         <Button
-          title="Continue"
+          title="ادامه"
           filled
           style={styles.continueButton}
           onPress={() => navigation.navigate("CreateNewPIN")}

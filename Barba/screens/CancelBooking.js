@@ -48,7 +48,7 @@ const CancelBooking = ({ navigation }) => {
                                   style={styles.editPencilIcon}
                                   />
                               </View>
-                                <Text style={styles.modalTitle}>Congratulations!</Text>
+                                <Text style={styles.modalTitle}>تبریک!</Text>
                                 <Text style={[styles.modalSubtitle, { 
                                      color: dark ? COLORS.grayscale200 : COLORS.black,
                                 }]}>
@@ -128,7 +128,7 @@ const CancelBooking = ({ navigation }) => {
                 }]}>Refund: $14.40</Text>
             </View>
             <Button
-            title="Continue"
+            title="ادامه"
             filled
             style={styles.continueBtn}
             onPress={() => { setModalVisible(true); }} 

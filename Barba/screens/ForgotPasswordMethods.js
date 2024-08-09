@@ -70,7 +70,7 @@ const ForgotPasswordMethods = ({ navigation }) => {
             </View>
           </TouchableOpacity>
           <Button
-            title="Continue"
+            title="ادامه"
             filled
             style={styles.button}
             onPress={() =>

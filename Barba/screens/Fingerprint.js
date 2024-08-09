@@ -58,12 +58,12 @@ const Fingerprint = ({ navigation }) => {
                 resizeMode='contain'
                 style={styles.modalIllustration}
               />
-              <Text style={styles.modalTitle}>Congratulations!</Text>
+              <Text style={styles.modalTitle}>تبریک!</Text>
               <Text style={[styles.modalSubtitle, { 
                 color: dark? COLORS.grayTie : COLORS.greyscale900
-              }]}>Your account is ready to use. You will be redirected to the Home page in a few seconds..</Text>
+              }]}>اکانت شما آماده است. بزن بریم!..</Text>
               <Button
-                title="Continue"
+                title="ادامه"
                 filled
                 onPress={() => {
                   setModalVisible(false)
@@ -90,8 +90,7 @@ const Fingerprint = ({ navigation }) => {
           showsVerticalScrollIndicator={false}>
           <Text style={[styles.title, { 
             color: dark? COLORS.white : COLORS.greyscale900
-          }]}>Add a fingerprint to make your account
-            more secure.</Text>
+          }]}>برای امنیت بیشتر اثر انگشت ثبت کنید</Text>
           <Image
             source={illustrations.fingerprint}
             resizeMode='contain'
@@ -99,13 +98,12 @@ const Fingerprint = ({ navigation }) => {
           />
           <Text style={[styles.title, { 
             color: dark? COLORS.white : COLORS.greyscale900
-          }]}>Please put your finger on the fingerprint
-            scanner to get started.</Text>
+          }]}>لطفا انگشت خود را بر روی حسگر بگذارید</Text>
         </ScrollView>
       </View>
       <View style={styles.bottomContainer}>
         <Button
-          title="Skip"
+          title="رد کردن"
           style={{
             width: (SIZES.width - 32) / 2 - 8,
             borderRadius: 32,
@@ -116,7 +114,7 @@ const Fingerprint = ({ navigation }) => {
           onPress={() => navigation.navigate("Login")}
         />
         <Button
-          title="Continue"
+          title="ادامه"
           filled
           style={styles.continueButton}
           onPress={() => setModalVisible(true)}

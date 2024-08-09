@@ -36,11 +36,12 @@ const Explore = () => {
   const initialMapState = {
     markers,
     region: {
-      latitude: 22.62938671242907,
-      longitude: 88.4354486029795,
+      latitude: 35.6997,
+      longitude: 51.3376,
       latitudeDelta: 0.04864195044303443,
       longitudeDelta: 0.040142817690068,
     },
+    
   };
 
   const [state, setState] = React.useState(initialMapState);
@@ -250,7 +251,7 @@ const Explore = () => {
         backgroundColor: dark ? COLORS.dark1 : COLORS.white,
       }]}>
         <TextInput
-          placeholder="Search barbers, salons..."
+          placeholder="آرایشگاه، سالن و ..."
           placeholderTextColor={dark ? COLORS.white : "#000"}
           autoCapitalize="none"
           style={{

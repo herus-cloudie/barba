@@ -56,25 +56,25 @@ const Onboarding = ({ navigation }) => {
             <View style={Onboarding1Styles.titleContainer}>
               <Text style={[Onboarding1Styles.title, {
                 color: colors.text
-              }]}>Welcome to</Text>
-              <Text style={Onboarding1Styles.subTitle}>Barba App</Text>
+              }]}>خوش آمدید</Text>
+              <Text style={Onboarding1Styles.subTitle}>پلتفرم نیکارا</Text>
             </View>
 
             <Text style={[Onboarding1Styles.description, { color: colors.text }]}>
-              We help you discovering the best barbers and salons in your area with Barba.
+              اپلیکیشن جامع خدمات زیبایی و آرایشگاهی نیکارا در محل 
             </Text>
 
             <View style={Onboarding1Styles.dotsContainer}>
               {progress < 1 && <DotsView progress={progress} numDots={4} />}
             </View>
             <Button
-              title="Next"
+              title="بعدی"
               filled
               onPress={() => navigation.navigate('Onboarding2')}
               style={Onboarding1Styles.nextButton}
             />
             <Button
-              title="Skip"
+              title="رد کردن"
               onPress={() => navigation.navigate('Login')}
               textColor={colors.primary}
               style={Onboarding1Styles.skipButton}

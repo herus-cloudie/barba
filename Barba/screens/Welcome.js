@@ -13,23 +13,23 @@ const Welcome = ({ navigation }) => {
       <View style={[styles.container, { backgroundColor: colors.background }]}>
         {/* change the default logo */}
         <Image source={images.logo} resizeMode="contain" style={styles.logo} />
-        <Text style={[styles.title, { color: colors.text }]}>Welcome Back!</Text>
+        <Text style={[styles.title, { color: colors.text }]}>خوش آمدید!</Text>
         <Text style={[styles.subtitle, { color: dark ? COLORS.white : "black" }]}>
-          Hello there, Continue with and discover the salons from around the world.
+        سلام، با مجموعه نیکارا همراه باشید و لحضات خوب را تجربه کنید.
         </Text>
         <View style={{ marginVertical: 32 }}>
-          <SocialButtonV2 title="Continue with Apple" icon={icons.appleLogo} onPress={() => navigation.navigate("Signup")} 
+          <SocialButtonV2 title="ورود با اپل" icon={icons.appleLogo} onPress={() => navigation.navigate("Signup")} 
           iconStyles={{ tintColor: dark ? COLORS.white : COLORS.black }} />
-          <SocialButtonV2 title="Continue with Google" icon={icons.google} onPress={() => navigation.navigate("Signup")} />
-          <SocialButtonV2 title="Continue with Email" icon={icons.email2} onPress={() => navigation.navigate("Signup")} />
+          <SocialButtonV2 title="ورود با گوگل " icon={icons.google} onPress={() => navigation.navigate("Signup")} />
+          <SocialButtonV2 title="ورود با ایمیل" icon={icons.email2} onPress={() => navigation.navigate("Signup")} />
         </View>
-        <View style={{ flexDirection: "row" }}>
+        <View style={{ flexDirection: "row-reverse" }}>
           <Text style={[styles.loginTitle, {
             color: dark ? COLORS.white : "black"
-          }]}>Already have account? </Text>
+          }]}>از قبل حساب کاربری دارید؟</Text>
           <TouchableOpacity
             onPress={() => navigation.navigate("Login")}>
-            <Text style={styles.loginSubtitle}>Log In</Text>
+            <Text style={styles.loginSubtitle}>ورود</Text>
           </TouchableOpacity>
         </View>
       </View>
@@ -37,12 +37,12 @@ const Welcome = ({ navigation }) => {
         <Text style={[styles.bottomTitle, {
           color: dark ? COLORS.white : COLORS.black
         }]}>
-          By continuing, you accept the Terms Of Use and
+          با ادامه دادن، قوانین نیکارا را قبول کرده اید.
         </Text>
         <TouchableOpacity onPress={() => navigation.navigate("Login")}>
           <Text style={[styles.bottomSubtitle, {
             color: dark ? COLORS.white : COLORS.black
-          }]}>Privacy Policy.</Text>
+          }]}>خط مشی</Text>
         </TouchableOpacity>
       </View>
     </SafeAreaView>

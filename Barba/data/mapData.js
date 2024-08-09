@@ -1,102 +1,102 @@
 import { images } from "../constants";
-
-export const  markers = [
-    {
-      id: "1",
-      coordinate: {
-        latitude: 22.6293867,
-        longitude: 88.4354486,
-      },
-      name: "Glamour Salon",
-      description: "Offering a variety of beauty services",
-      type: "Salon",
-      image: images.salon1,
-      rating: 4.5,
-      reviews: 120,
-      address: "123 Main Street",
-      phoneNumber: "+1 (555) 123-4567",
-      distance: 1.5,
-      servicesOffered: ["Haircut", "Manicure", "Pedicure"],
-      openingHours: "9:00 AM - 6:00 PM",
-      website: "www.glamoursalon.com"
+export const markers = [
+  {
+    id: "1",
+    coordinate: {
+      latitude: 35.6892,
+      longitude: 51.3890,
     },
-    {
-      id: "2",
-      coordinate: {
-        latitude: 22.6345648,
-        longitude: 88.4377279,
-      },
-      name: "The Gentleman's Den",
-      description: "A classic barbershop for gentlemen",
-      type: "Barbershop",
-      image: images.salon2,
-      rating: 4.8,
-      reviews: 90,
-      address: "456 Elm Street",
-      phoneNumber: "+1 (555) 987-6543",
-      distance: 3,
-      servicesOffered: ["Haircut", "Shave", "Beard Trim"],
-      openingHours: "10:00 AM - 8:00 PM",
-      website: "www.gentlemansden.com"
+    name: "سالن زیبایی گلامور",
+    description: "ارائه دهنده خدمات زیبایی متنوع",
+    type: "سالن زیبایی",
+    image: images.salon1,
+    rating: 4.5,
+    reviews: 120,
+    address: "خیابان اصلی ۱۲۳",
+    phoneNumber: "+98 (21) 123-4567",
+    distance: 1.5,
+    servicesOffered: ["کوتاهی مو", "مانیکور", "پدیکور"],
+    openingHours: "۹:۰۰ صبح - ۶:۰۰ عصر",
+    website: "www.glamoursalon.ir"
+  },
+  {
+    id: "2",
+    coordinate: {
+      latitude: 35.7015,
+      longitude: 51.3927,
     },
-    {
-      id: "3",
-      coordinate: {
-        latitude: 22.6281662,
-        longitude: 88.4410113,
-      },
-      name: "Chic Hair Studio",
-      description: "Specializing in trendy hairstyles",
-      type: "Salon",
-      image: images.salon3,
-      rating: 4.2,
-      reviews: 150,
-      address: "789 Oak Lane",
-      phoneNumber: "+1 (555) 321-7890",
-      distance: 2.5,
-      servicesOffered: ["Hair Coloring", "Extensions", "Blowout"],
-      openingHours: "8:00 AM - 7:00 PM",
-      website: "www.chichairstudio.com"
+    name: "آقایان دن",
+    description: "آرایشگاه کلاسیک برای آقایان",
+    type: "آرایشگاه",
+    image: images.salon2,
+    rating: 4.8,
+    reviews: 90,
+    address: "خیابان نارون ۴۵۶",
+    phoneNumber: "+98 (21) 987-6543",
+    distance: 3,
+    servicesOffered: ["کوتاهی مو", "اصلاح صورت", "ترمیم ریش"],
+    openingHours: "۱۰:۰۰ صبح - ۸:۰۰ عصر",
+    website: "www.gentlemansden.ir"
+  },
+  {
+    id: "3",
+    coordinate: {
+      latitude: 35.6897,
+      longitude: 51.4215,
     },
-    {
-      id: "4",
-      coordinate: {
-        latitude: 22.6341137,
-        longitude: 88.4497463,
-      },
-      name: "Sharp Cuts Barbershop",
-      description: "Where precision meets style",
-      type: "Barbershop",
-      image: images.salon2,
-      rating: 4.9,
-      reviews: 120,
-      address: "101 Oak Street",
-      phoneNumber: "+1 (555) 321-7890",
-      distance: 2,
-      servicesOffered: ["Haircut", "Hot Towel Shave", "Facial"],
-      openingHours: "9:00 AM - 6:00 PM",
-      website: "www.sharpcutsbarbershop.com"
+    name: "استودیو مو شیک",
+    description: "تخصص در مدل های مو مدرن",
+    type: "سالن زیبایی",
+    image: images.salon3,
+    rating: 4.2,
+    reviews: 150,
+    address: "خیابان بلوط ۷۸۹",
+    phoneNumber: "+98 (21) 321-7890",
+    distance: 2.5,
+    servicesOffered: ["رنگ مو", "اکستنشن", "براشینگ"],
+    openingHours: "۸:۰۰ صبح - ۷:۰۰ عصر",
+    website: "www.chichairstudio.ir"
+  },
+  {
+    id: "4",
+    coordinate: {
+      latitude: 35.6841,
+      longitude: 51.3884,
     },
-    {
-      id: "5",
-      coordinate: {
-        latitude: 22.5341137,
-        longitude: 88.4797463,
-      },
-      name: "Our Best Barbers",
-      description: "Where precision meets style",
-      type: "Barbershop",
-      image: images.salon5,
-      rating: 4.9,
-      reviews: 120,
-      address: "101 Oak Street",
-      phoneNumber: "+1 (555) 321-7890",
-      distance: 2,
-      servicesOffered: ["Haircut", "Hot Towel Shave", "Facial"],
-      openingHours: "9:00 AM - 6:00 PM",
-      website: "www.sharpcutsbarbershop.com"
-    }
+    name: "آرایشگاه شارب کاتس",
+    description: "جایی که دقت با استایل ملاقات می‌کند",
+    type: "آرایشگاه",
+    image: images.salon2,
+    rating: 4.9,
+    reviews: 120,
+    address: "خیابان بلوط ۱۰۱",
+    phoneNumber: "+98 (21) 321-7890",
+    distance: 2,
+    servicesOffered: ["کوتاهی مو", "اصلاح با حوله گرم", "پاکسازی صورت"],
+    openingHours: "۹:۰۰ صبح - ۶:۰۰ عصر",
+    website: "www.sharpcutsbarbershop.ir"
+  },
+  {
+    id: "5",
+    coordinate: {
+      latitude: 35.7070,
+      longitude: 51.4100,
+    },
+    name: "آرایشگران برتر",
+    description: "جایی که دقت با استایل ملاقات می‌کند",
+    type: "آرایشگاه",
+    image: images.salon5,
+    rating: 4.9,
+    reviews: 120,
+    address: "خیابان بلوط ۱۰۱",
+    phoneNumber: "+98 (21) 321-7890",
+    distance: 2,
+    servicesOffered: ["کوتاهی مو", "اصلاح با حوله گرم", "پاکسازی صورت"],
+    openingHours: "۹:۰۰ صبح - ۶:۰۰ عصر",
+    website: "www.sharpcutsbarbershop.ir"
+  }
 ];
+
 
 
 export const mapDarkStyle = [

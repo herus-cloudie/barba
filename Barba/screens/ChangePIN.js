@@ -40,7 +40,7 @@ const ChangePIN = ({ navigation }) => {
               }}/>
         </ScrollView>
         <Button
-          title="Continue"
+          title="ادامه"
           filled
           style={styles.button}
           onPress={() => { navigation.goBack() }}

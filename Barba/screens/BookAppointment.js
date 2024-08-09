@@ -121,7 +121,7 @@ const BookAppointment = ({ navigation }) => {
         backgroundColor: dark? COLORS.dark1 : COLORS.white
       }]}>
         <Button
-          title="Continue"
+          title="ادامه"
           filled
           style={styles.button}
           onPress={() => navigation.navigate("PaymentMethods")}

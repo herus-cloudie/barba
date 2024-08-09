@@ -62,10 +62,10 @@ const ChangeEmail = ({ navigation }) => {
                             resizeMode='contain'
                             style={styles.modalIllustration}
                         />
-                        <Text style={styles.modalTitle}>Congratulations!</Text>
-                        <Text style={styles.modalSubtitle}>Your account is ready to use. You will be redirected to the Home page in a few seconds..</Text>
+                        <Text style={styles.modalTitle}>تبریک!</Text>
+                        <Text style={styles.modalSubtitle}>اکانت شما آماده است. بزن بریم!..</Text>
                         <Button
-                            title="Continue"
+                            title="ادامه"
                             filled
                             onPress={() => {
                                 setModalVisible(false)
@@ -132,7 +132,7 @@ const ChangeEmail = ({ navigation }) => {
             </View>
         </ScrollView>
         <Button
-              title="Continue"
+              title="ادامه"
               filled
               onPress={() => setModalVisible(true)}
               style={styles.button}

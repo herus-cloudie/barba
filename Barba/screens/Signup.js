@@ -76,12 +76,12 @@ const Signup = ({ navigation }) => {
           </View>
           <Text style={[styles.title, {
             color: dark ? COLORS.white : COLORS.black
-          }]}>Create Your Account</Text>
+          }]}>ساخت حساب کاربری </Text>
           <Input
             id="email"
             onInputChanged={inputChangedHandler}
             errorText={formState.inputValidities['email']}
-            placeholder="Email"
+            placeholder="ایمیل"
             placeholderTextColor={dark ? COLORS.grayTie : COLORS.black}
             icon={icons.email}
             keyboardType="email-address"
@@ -91,10 +91,9 @@ const Signup = ({ navigation }) => {
             errorText={formState.inputValidities['password']}
             autoCapitalize="none"
             id="password"
-            placeholder="Password"
+            placeholder="پسورد"
             placeholderTextColor={dark ? COLORS.grayTie : COLORS.black}
             icon={icons.padlock}
-            secureTextEntry={true}
           />
           <View style={styles.checkBoxContainer}>
             <View style={{ flexDirection: 'row' }}>
@@ -107,18 +106,18 @@ const Signup = ({ navigation }) => {
               <View style={{ flex: 1 }}>
                 <Text style={[styles.privacy, {
                   color: dark ? COLORS.white : COLORS.black
-                }]}>By continuing you accept our Privacy Policy</Text>
+                }]}>ثبت نام به منزله تایید قوانین نیکارا میباشد</Text>
               </View>
             </View>
           </View>
           <Button
-            title="Sign Up"
+            title="ثبت نام"
             filled
             onPress={() => navigation.navigate("FillYourProfile")}
             style={styles.button}
           />
           <View>
-            <OrSeparator text="or continue with" />
+            <OrSeparator text=" ورود با" />
             <View style={styles.socialBtnContainer}>
               <SocialButton
                 icon={icons.appleLogo}
@@ -136,15 +135,16 @@ const Signup = ({ navigation }) => {
             </View>
           </View>
         </ScrollView>
-        <View style={styles.bottomContainer}>
-          <Text style={[styles.bottomLeft, {
-            color: dark ? COLORS.white : COLORS.black
-          }]}>Already have an account ?</Text>
-          <TouchableOpacity
+        <View style={styles.bottomContainer}> 
+         <TouchableOpacity
             onPress={() => navigation.navigate("Login")}
           >
-            <Text style={styles.bottomRight}>{" "}Sign In</Text>
+            <Text style={styles.bottomRight}>{" "}ورود</Text>
           </TouchableOpacity>
+          <Text style={[styles.bottomLeft, {
+            color: dark ? COLORS.white : COLORS.black
+          }]}>قبلا ثبت نام کرده اید؟</Text>
+
         </View>
       </View>
     </SafeAreaView>

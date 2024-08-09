@@ -107,7 +107,7 @@ const faqsRoute = () => {
                                 : COLORS.grayscale400,
                         },
                     ]}
-                    placeholder="Search"
+                    placeholder="جستجو"
                     placeholderTextColor={
                         dark ? COLORS.greyscale600 : COLORS.grayscale400
                     }

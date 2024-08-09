@@ -25,7 +25,7 @@ const OurGallery = () => {
             <SubHeaderItem
                 title="Our Gallery"
                 onPress={() =>navigation.navigate("SalonDetailsGallery")}
-                navTitle="See All"
+                navTitle="دیدن همه"
             />
             <View style={[styles.separateLine, { 
                 backgroundColor: dark ? COLORS.grayscale700 : COLORS.grayscale200,
