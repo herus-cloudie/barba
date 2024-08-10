@@ -1,6 +1,6 @@
 import { View, Text, TouchableOpacity, Image, FlatList, StyleSheet } from 'react-native';
 import React from 'react';
-import { messsagesData } from '../data';
+import { messagesData } from '../data';
 import { COLORS, SIZES } from '../constants';
 import { useNavigation } from '@react-navigation/native';
 import { useTheme } from '../theme/ThemeProvider';
@@ -80,7 +80,7 @@ const Chats = () => {
     return (
         <View>
             <FlatList
-                data={messsagesData}
+                data={messagesData}
                 showsVerticalScrollIndicator={false}
                 renderItem={renderItem}
                 keyExtractor={(item) => item.id.toString()}

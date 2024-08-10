@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { COLORS, SIZES, icons, images } from '../constants';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { ScrollView } from 'react-native-virtualized-view';
-import { banners, categories, category, mostPopularSalons, salonsNearbyYourLocations } from '../data';
+import { banners, categories, stories , category, mostPopularSalons, salonsNearbyYourLocations } from '../data';
 import { useTheme } from '../theme/ThemeProvider';
 import Category from '../components/Category';
 import SubHeaderItem from '../components/SubHeaderItem';
@@ -57,10 +57,10 @@ const Home = ({ navigation }) => {
               style={styles.userIcon}
             />
             <View style={styles.viewNameContainer}>
-               <Text style={styles.greeeting}>وقت بخیر👋</Text>
+               <Text style={styles.greeeting}>موقعیت مکانی:</Text>
                <Text style={[styles.title, { 
                 color: dark ? COLORS.white : COLORS.greyscale900
-               }]}>ستاره قاسمی</Text>
+               }]}>تهران</Text>
             </View>
           </View>
           <View style={styles.viewRight}>
@@ -151,6 +151,30 @@ const Home = ({ navigation }) => {
     </View>
     )
   }
+
+    /**
+   * Render categories
+   */
+    const renderStories = () => {
+
+      return (       
+      <View>
+        <ScrollView horizontal={true}>
+          <FlatList
+            data={stories}
+            keyExtractor={(item, index) => index.toString()}
+            horizontal={false}
+            numColumns={8} // Render two items per row
+            renderItem={({ item, index }) => (
+              <Category
+              background={item.background}
+              />
+            )}
+          />
+        </ScrollView>
+      </View>
+      )
+    }
 
   /**
    * Render categories
@@ -351,6 +375,7 @@ const Home = ({ navigation }) => {
         {renderHeader()}
         <ScrollView showsVerticalScrollIndicator={false}>
         {renderSearchBar()}
+        {renderStories()}
         {renderBanner()}
         {renderCategories()}
         {renderSalonsNearbyYourLocation()}
@@ -380,7 +405,7 @@ const styles = StyleSheet.create({
   userIcon: {
     width: 48,
     height: 48,
-    borderRadius: 32
+    borderRadius: 0
   },
   viewLeft: {
     flexDirection: "row",
@@ -390,7 +415,7 @@ const styles = StyleSheet.create({
     fontSize: 12,
     fontFamily: "regular",
     color: "gray",
-    marginBottom: 4,
+    marginLeft: 5,
   },
   title: {
     fontSize: 20,
@@ -398,7 +423,12 @@ const styles = StyleSheet.create({
     color: COLORS.greyscale900
   },
   viewNameContainer: {
-    marginLeft: 12
+    marginLeft: 12,
+    display : 'flex',
+    flexDirection : "row-reverse",
+    justifyContent : "space-between",
+    alignContent : "center",
+    alignItems : "center"
   },
   viewRight: {
     flexDirection: "row",

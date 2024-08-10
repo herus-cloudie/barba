@@ -73,7 +73,7 @@ const CancelBooking = ({ navigation }) => {
   return (
     <SafeAreaView style={[styles.area, { backgroundColor: colors.background }]}>
       <View style={[styles.container, { backgroundColor: colors.background }]}>
-        <Header title="Cancel Booking"/>
+        <Header title="لغو رزرو"/>
         <ScrollView showsVerticalScrollIndicator={false}>
             <Text style={[styles.title, { 
               color: dark? COLORS.white : COLORS.greyscale900

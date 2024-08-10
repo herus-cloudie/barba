@@ -3,34 +3,47 @@ import React from 'react'
 import { COLORS, SIZES } from '../constants';
 import { useTheme } from '../theme/ThemeProvider';
 
-const Category = ({   name, icon, iconColor, backgroundColor, onPress }) => {
+const Category = ({   name, icon, iconColor, backgroundColor, onPress , background }) => {
     const { colors, dark } = useTheme();
   return (
-    <View style={styles.container}>
+    <View style={icon ? styles.container2  : styles.container1}>
         <TouchableOpacity 
            onPress={onPress}
            style={[styles.iconContainer, {
             backgroundColor: backgroundColor
            }]}>
             <Image
-                source={icon}
+                source={icon || background}
                 resizeMode='contain'
-                style={[styles.icon, { 
-                    tintColor: iconColor
-                }]}
+                style={icon ? [styles.icon, {tintColor: iconColor}] : [styles.background]}
             />
         </TouchableOpacity>
-        <Text style={[styles.name, { color: colors.text }]}>{name}</Text>
+        {name && <Text style={[styles.name, { color: colors.text }]}>{name}</Text>}
     </View>
   )
 };
 
 const styles = StyleSheet.create({
-    container: {
+    container1: {
+        flexDirection: "column",
+        alignItems: "center",
+        marginTop : 25,
+        marginBottom : 15,
+        width: (SIZES.width - 32)/6
+    },
+    container2: {
         flexDirection: "column",
         alignItems: "center",
         marginBottom: 12,
         width: (SIZES.width - 32)/4
+    },
+    background : {
+        height: 70,
+        marginLeft : 30,
+        width: 70,
+        borderWidth: 1.3,
+        borderRadius: 100,
+
     },
     iconContainer: {
         width: 54,

@@ -21,7 +21,7 @@ const TabContent = ({ tab }) => {
     }
 };
 
-const Tabs = ['Upcoming', 'Completed', 'Cancelled'];
+const Tabs = ['رزرو شده', 'انجام شده', 'کنسل شده'];
 
 const BookingTabSelection = () => {
     const [selectedTab, setSelectedTab] = useState('Upcoming');

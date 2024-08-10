@@ -8,7 +8,16 @@ const barber6 = require("../assets/images/barber6.png");
 const barber7 = require("../assets/images/barber7.png");
 const logo = require("../assets/images/logo2.png");
 
-const user1 = require("../assets/images/users/user1.jpeg");
+const bg1 = require('../assets/images/stories/bg1.png');
+const bg2 = require('../assets/images/stories/bg9.png')
+const bg3 = require('../assets/images/stories/bg3.png')
+const bg4 = require('../assets/images/stories/bg4.png')
+const bg5 = require('../assets/images/stories/bg5.png')
+const bg6 = require('../assets/images/stories/bg6.png')
+const bg7 = require('../assets/images/stories/bg7.png')
+const bg8 = require('../assets/images/stories/bg8.png')
+
+const user1 = require("../assets/images/users/user1.png");
 const user2 = require("../assets/images/users/user2.jpeg");
 const user3 = require("../assets/images/users/user3.jpeg");
 const user4 = require("../assets/images/users/user4.jpeg");
@@ -98,6 +107,15 @@ export default {
     barber6,
     barber7,
     logo,
+
+    bg1,
+    bg2,
+    bg3,
+    bg4,
+    bg5,
+    bg6,
+    bg7,
+    bg8,
 
     user1,
     user2,

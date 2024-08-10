@@ -181,14 +181,14 @@ const Explore = () => {
                               style={styles.editPencilIcon}
                               />
                           </View>
-                            <Text style={styles.modalTitle}>Enable Location</Text>
+                            <Text style={styles.modalTitle}>فعال سازی GPS</Text>
                             <Text style={[styles.modalSubtitle, { 
                               color: dark ? COLORS.white : COLORS.black,
                             }]}>
-                            We need location access to find the nearest barber/salon around you.
+                            ما برای پیداکردن نزدیکترین سالن‌های نیکارا به موقعیت مکانی شما نیازمندیم.
                             </Text>
                             <Button
-                                title="Enable location"
+                                title="فعال سازی GPS"
                                 filled
                                 onPress={() => {
                                     setModalVisible(false)
@@ -196,7 +196,7 @@ const Explore = () => {
                                 style={styles.successBtn}
                             />
                              <Button
-                                title="Cancel"
+                                title="لغو"
                                 onPress={() => {
                                     setModalVisible(false)
                                 }}

@@ -44,7 +44,7 @@ const UpcomingBookings = () => {
               <View style={styles.rightContainer}>
                 <Text style={[styles.remindMeText, { 
                   color: dark ? COLORS.grayscale400 : COLORS.grayscale700,
-                }]}>Remind me</Text>
+                }]}>یادم بنداز</Text>
                 <Switch
                   value={item.hasRemindMe}
                   onValueChange={() => toggleRemindMe(item.id)}
@@ -85,12 +85,12 @@ const UpcomingBookings = () => {
               <TouchableOpacity
                 onPress={() => refRBSheet.current.open()}
                 style={styles.cancelBtn}>
-                <Text style={styles.cancelBtnText}>Cancel Booking</Text>
+                <Text style={styles.cancelBtnText}>لغو رزرو</Text>
               </TouchableOpacity>
               <TouchableOpacity 
                 onPress={()=>navigation.navigate("EReceipt")}
                 style={styles.receiptBtn}>
-                <Text style={styles.receiptBtnText}>View E-Receipt</Text>
+                <Text style={styles.receiptBtnText}>رسید اطمینان</Text>
               </TouchableOpacity>
             </View>
           </TouchableOpacity>
@@ -120,7 +120,7 @@ const UpcomingBookings = () => {
         }}>
         <Text style={[styles.bottomSubtitle, {
           color: dark ? COLORS.red : COLORS.red
-        }]}>Cancel Booking</Text>
+        }]}>لغو رزرو</Text>
         <View style={[styles.separateLine, { 
            backgroundColor: dark?  COLORS.greyScale800 : COLORS.grayscale200,
         }]} />
@@ -128,15 +128,15 @@ const UpcomingBookings = () => {
         <View style={styles.selectedCancelContainer}>
           <Text style={[styles.cancelTitle, { 
             color: dark? COLORS.secondaryWhite : COLORS.greyscale900
-          }]}>Are you sure you want to cancel your barber/salon booking?</Text>
+          }]}>آیا مطمئن هستید که می خواهید رزرو آرایشگاه/سالن خود را لغو کنید؟</Text>
           <Text style={[styles.cancelSubtitle, { 
             color: dark? COLORS.grayscale400 : COLORS.grayscale700
-          }]}>Only 80% of the money you can refund from your payment according to our policy.</Text>
+          }]}>طبق خط مشی ما فقط 80 درصد پولی که می توانید از پرداخت خود بازپرداخت کنید.</Text>
         </View>
 
         <View style={styles.bottomContainer}>
           <Button
-            title="Cancel"
+            title="لغو"
             style={{
               width: (SIZES.width - 32) / 2 - 8,
               backgroundColor: dark ? COLORS.dark3 : COLORS.tansparentPrimary,

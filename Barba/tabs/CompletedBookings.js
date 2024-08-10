@@ -55,7 +55,7 @@ const CompletedBookings = () => {
             <TouchableOpacity 
                onPress={()=>navigation.navigate("EReceipt")}
                style={styles.receiptBtn}>
-              <Text style={styles.receiptBtnText}>View E-Receipt</Text>
+              <Text style={styles.receiptBtnText}>رسید اطمینان</Text>
             </TouchableOpacity>
           </TouchableOpacity>
          )}

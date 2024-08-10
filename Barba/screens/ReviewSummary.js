@@ -53,7 +53,7 @@ const ReviewSummary = ({ navigation }) => {
                               style={styles.successBtn}
                           />
                            <Button
-                              title="View E-Receipt"
+                              title="رسید اطمینان"
                               onPress={() => {
                                   setModalVisible(false)
                                   navigation.navigate("EReceipt")
