@@ -101,7 +101,7 @@ const UpcomingBookings = () => {
         ref={refRBSheet}
         closeOnDragDown={true}
         closeOnPressMask={false}
-        height={332}
+        height={600}
         customStyles={{
           wrapper: {
             backgroundColor: "rgba(0,0,0,0.5)",
@@ -112,10 +112,11 @@ const UpcomingBookings = () => {
           container: {
             borderTopRightRadius: 32,
             borderTopLeftRadius: 32,
-            height: 332,
+            height: 400,
             backgroundColor: dark ? COLORS.dark2 : COLORS.white,
             alignItems: "center",
-            width: "100%"
+            width: "100%",
+            paddingBottom :227
           }
         }}>
         <Text style={[styles.bottomSubtitle, {
@@ -136,7 +137,7 @@ const UpcomingBookings = () => {
 
         <View style={styles.bottomContainer}>
           <Button
-            title="لغو"
+            title="انصراف"
             style={{
               width: (SIZES.width - 32) / 2 - 8,
               backgroundColor: dark ? COLORS.dark3 : COLORS.tansparentPrimary,
@@ -147,7 +148,7 @@ const UpcomingBookings = () => {
             onPress={() => refRBSheet.current.close()}
           />
           <Button
-            title="Yes, Cancel"
+            title="بله، لغو"
             filled
             style={styles.removeButton}
             onPress={() => { 

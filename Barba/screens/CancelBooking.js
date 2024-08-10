@@ -77,7 +77,7 @@ const CancelBooking = ({ navigation }) => {
         <ScrollView showsVerticalScrollIndicator={false}>
             <Text style={[styles.title, { 
               color: dark? COLORS.white : COLORS.greyscale900
-            }]}>Please select a payment refund method (only 80% will be refunded)</Text>
+            }]}>لطفاً یک روش بازپرداخت را انتخاب کنید (فقط 80٪ بازپرداخت می شود)</Text>
           <PaymentMethodItem
           checked={selectedItem === 'Paypal'}
           onPress={() => handleCheckboxPress('Paypal')}
@@ -143,12 +143,13 @@ const CancelBooking = ({ navigation }) => {
 const styles = StyleSheet.create({
   area: {
     flex: 1,
-    backgroundColor: COLORS.white
+    backgroundColor: COLORS.white,
+    // paddingBottom : 150
   },
   container: {
     flex: 1,
     backgroundColor: COLORS.white,
-    padding: 16
+    // padding: 16
   },
   title: {
     fontSize: 16,

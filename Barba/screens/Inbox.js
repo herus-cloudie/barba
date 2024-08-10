@@ -18,8 +18,8 @@ const Inbox = () => {
 
   const [index, setIndex] = React.useState(0);
   const [routes] = React.useState([
-    { key: 'first', title: 'Chats' },
-    { key: 'second', title: 'Calls' },
+    { key: 'first', title: 'چت' },
+    { key: 'second', title: 'تماس‌ها.' },
   ]);
 
   const renderTabBar = (props) => (

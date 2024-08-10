@@ -12,7 +12,7 @@ const AboutUs = () => {
     const navigation = useNavigation();
     const { colors, dark } = useTheme();
 
-    const description = ` We specialize in providing top-notch haircuts, beard trims, and grooming services for gentlemen of all ages. Our skilled team of barbers is dedicated to delivering a personalized experience, ensuring that each client leaves feeling confident and stylish. With a cozy and inviting atmosphere, you'll feel right at home as soon as you step through our doors. Whether you're looking for a classic haircut or a modern style, we've got you covered.`;
+    const description = `ما در ارائه خدمات کوتاه کردن مو، اصلاح ریش، و خدمات آراستگی برای آقایان در تمام سنین تخصص داریم. تیم ماهر آرایشگران ما به ارائه یک تجربه شخصی اختصاص داده شده است تا اطمینان حاصل شود که هر مشتری احساس اعتماد به نفس و شیک بودن را به همراه دارد. با فضایی دنج و دلپذیر، به محض اینکه از درهای ما عبور کنید، احساس خوبی در خانه خواهید داشت. چه به دنبال مدل موی کلاسیک یا مدرن باشید، ما شما را تحت پوشش قرار می دهیم.`;
 
     const toggleExpanded = () => {
         setExpanded(!expanded);
