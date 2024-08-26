@@ -429,20 +429,24 @@ export const banners = [
       discount: '40%',
       discountName: "ویژه های امروز",
       bottomTitle: 'هر روز کلی خدمات با تخفیف دریافت کن',
+      image: require('../assets/images/banner/banner1.jpg'), // Path to the first banner image
     },
     {
       id: 2,
       discount: '50%',
       discountName: "تخفیفات آخرهفته",
       bottomTitle: 'آخر هفته ها همیشه تخفیف داریم!',
+      image: require('../assets/images/banner/banner2.jpg'), // Path to the second banner image
     },
     {
       id: 3,
       discount: '30%',
       discountName: "فروش ویژه موقت",
       bottomTitle: 'زمان رو از دست نده، کلی ایتم خفن با تخفیف داریم',
+      image: require('../assets/images/banner/banner3.jpg'), // Path to the third banner image
     },
-];
+  ];
+  
 
 export const notifications = [
     {

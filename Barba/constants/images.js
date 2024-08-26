@@ -8,14 +8,18 @@ const barber6 = require("../assets/images/barber6.png");
 const barber7 = require("../assets/images/barber7.png");
 const logo = require("../assets/images/logo2.png");
 
-const bg1 = require('../assets/images/stories/bg1.png');
-const bg2 = require('../assets/images/stories/bg9.png')
-const bg3 = require('../assets/images/stories/bg3.png')
-const bg4 = require('../assets/images/stories/bg4.png')
-const bg5 = require('../assets/images/stories/bg5.png')
-const bg6 = require('../assets/images/stories/bg6.png')
-const bg7 = require('../assets/images/stories/bg7.png')
-const bg8 = require('../assets/images/stories/bg8.png')
+const bg1 = require('../assets/images/stories/bgg1.jpg');
+const bg2 = require('../assets/images/stories/bgg2.jpg');
+const bg3 = require('../assets/images/stories/bgg3.jpg');
+const bg4 = require('../assets/images/stories/bgg4.jpg');
+const bg5 = require('../assets/images/stories/bgg5.jpg');
+const bg6 = require('../assets/images/stories/bgg6.jpg');
+const bg7 = require('../assets/images/stories/bgg7.jpg');
+const bg8 = require('../assets/images/stories/bgg8.jpg')
+
+const banner1 = require('../assets/images/banner/banner1.jpg');
+const banner2 = require('../assets/images/banner/banner2.jpg');
+const banner3 = require('../assets/images/banner/banner3.jpg')
 
 const user1 = require("../assets/images/users/user1.png");
 const user2 = require("../assets/images/users/user2.jpeg");
@@ -116,6 +120,10 @@ export default {
     bg6,
     bg7,
     bg8,
+
+    banner1,
+    banner2,
+    banner3,
 
     user1,
     user2,

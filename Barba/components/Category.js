@@ -3,7 +3,7 @@ import React from 'react'
 import { COLORS, SIZES } from '../constants';
 import { useTheme } from '../theme/ThemeProvider';
 
-const Category = ({   name, icon, iconColor, backgroundColor, onPress , background }) => {
+const Category = ({ name, icon, iconColor, backgroundColor, onPress , background }) => {
     const { colors, dark } = useTheme();
   return (
     <View style={icon ? styles.container2  : styles.container1}>

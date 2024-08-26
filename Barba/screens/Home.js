@@ -1,4 +1,4 @@
-import { View, Text, StyleSheet, Image, TouchableOpacity, TextInput, FlatList } from 'react-native';
+import { View, Text, StyleSheet, Image, TouchableOpacity, TextInput, FlatList, ImageBackground } from 'react-native';
 import React, { useState } from 'react';
 import { COLORS, SIZES, icons, images } from '../constants';
 import { SafeAreaView } from 'react-native-safe-area-context';
@@ -14,10 +14,13 @@ const Home = ({ navigation }) => {
   const { colors, dark } = useTheme();
 
   const renderBannerItem = ({ item }) => (
-    <View style={styles.bannerContainer}>
+    <ImageBackground
+      source={item.image} // Dynamic background image
+      style={styles.bannerContainer} // Ensure the background covers the entire container
+    >
       <View style={styles.bannerTopContainer}>
         <View>
-          <Text style={styles.bannerDicount}>{item.discount} OFF</Text>
+          <Text style={styles.bannerDiscount}>{item.discount} OFF</Text>
           <Text style={styles.bannerDiscountName}>{item.discountName}</Text>
         </View>
         <Text style={styles.bannerDiscountNum}>{item.discount}</Text>
@@ -26,7 +29,7 @@ const Home = ({ navigation }) => {
         <Text style={styles.bannerBottomTitle}>{item.bottomTitle}</Text>
         <Text style={styles.bannerBottomSubtitle}>{item.bottomSubtitle}</Text>
       </View>
-    </View>
+    </ImageBackground>
   );
 
   const keyExtractor = (item) => item.id.toString();
@@ -126,31 +129,31 @@ const Home = ({ navigation }) => {
   /**
    * Render banner
    */
-  const renderBanner = ()=>{
+  const renderBanner = () => {
     return (
-      <View style={styles.bannerItemContainer}>
-      <FlatList
-        data={banners}
-        renderItem={renderBannerItem}
-        keyExtractor={keyExtractor}
-        horizontal
-        pagingEnabled
-        showsHorizontalScrollIndicator={false}
-        onEndReached={handleEndReached}
-        onEndReachedThreshold={0.5}
-        onMomentumScrollEnd={(event) => {
-          const newIndex = Math.round(
-            event.nativeEvent.contentOffset.x / SIZES.width
-          );
-          setCurrentIndex(newIndex);
-        }}
-      />
-      <View style={styles.dotContainer}>
-        {banners.map((_, index) => renderDot(index))}
-      </View>
-    </View>
-    )
-  }
+      <> 
+       <FlatList
+          data={banners}
+          renderItem={renderBannerItem}
+          keyExtractor={keyExtractor}
+          horizontal
+          pagingEnabled
+          showsHorizontalScrollIndicator={false}
+          onEndReached={handleEndReached}
+          onEndReachedThreshold={0.5}
+          onMomentumScrollEnd={(event) => {
+            const newIndex = Math.round(
+              event.nativeEvent.contentOffset.x / SIZES.width
+            );
+            setCurrentIndex(newIndex);
+          }}
+        />
+        <View style={styles.dotContainer}>
+          {banners.map((_, index) => renderDot(index))}
+        </View>
+      </>
+    );
+  };
 
     /**
    * Render categories
@@ -477,11 +480,14 @@ const styles = StyleSheet.create({
   },
   bannerContainer: {
     width :SIZES.width - 32,
-    height: 154 ,
+    height: 170 ,
     paddingHorizontal: 28,
     paddingTop: 28,
+    marginBottom :10,
+    marginTop : 15,
     borderRadius: 32,
-    backgroundColor: COLORS.primary
+    // backgroundColor: COLORS.dark2
+  
   },
   bannerTopContainer: {
     flexDirection: "row",
@@ -544,6 +550,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'center',
     alignItems: 'center',
+    // height : 190p
     // gap : '50px'
   },
   dot: {
